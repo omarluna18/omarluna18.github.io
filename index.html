@@ -11,6 +11,9 @@
             padding: 0;
             text-align: center;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #333;
@@ -23,11 +26,6 @@
             width: 100%;
             max-height: 300px;
             object-fit: cover;
-        }
-        /* Estilo para la imagen debajo del banner */
-        .image-below-banner {
-            width: 100%;
-            display: block;
         }
         nav {
             background: #444;
@@ -43,6 +41,7 @@
             background: #555;
         }
         .container {
+            flex-grow: 1; /* Hace que el contenido empuje la imagen hacia abajo */
             padding: 20px;
         }
         .project-list {
@@ -65,6 +64,12 @@
         .project-list a:hover {
             color: #007BFF;
         }
+        /* Imagen al final de la página */
+        .image-footer {
+            width: 100%;
+            display: block;
+            margin-top: auto; /* Empuja la imagen al final */
+        }
     </style>
 </head>
 <body>
@@ -75,9 +80,6 @@
     <div class="banner">
         <img src="banner.jpg" alt="Banner">
     </div>
-
-    <!-- Imagen debajo del banner -->
-    <img src="CME.jpg" alt="Imagen debajo del banner" class="image-below-banner">
 
     <nav>
         <a href="#">Inicio</a>
@@ -97,5 +99,10 @@
         </ul>
     </div>
 
+    <!-- Imagen al final de la página -->
+    <img src="CME.jpg" alt="Imagen final" class="image-footer">
+
 </body>
 </html>
+
+
