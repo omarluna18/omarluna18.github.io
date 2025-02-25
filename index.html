@@ -24,11 +24,10 @@
             max-height: 300px;
             object-fit: cover;
         }
-        .fullscreen-image {
-            background: url('CME.jpg') no-repeat center center;
-            background-size: cover;
-            width: 50%;
-            height: calc(100vh - 340px); /* Ajusta la altura restando el header y el banner */
+        /* Estilo para la imagen debajo del banner */
+        .image-below-banner {
+            width: 100%;
+            display: block;
         }
         nav {
             background: #444;
@@ -72,13 +71,13 @@
 
     <header>Omar Luna</header>
 
-    <!-- Imagen Representativa (Banner) -->
+    <!-- Banner -->
     <div class="banner">
-        <img src="CME.jpg" alt="Banner">
+        <img src="banner.jpg" alt="Banner">
     </div>
 
-    <!-- Imagen de fondo a pantalla completa debajo del banner -->
-    <div class="fullscreen-image"></div>
+    <!-- Imagen debajo del banner -->
+    <img src="CME.jpg" alt="Imagen debajo del banner" class="image-below-banner">
 
     <nav>
         <a href="#">Inicio</a>
@@ -100,4 +99,3 @@
 
 </body>
 </html>
-
